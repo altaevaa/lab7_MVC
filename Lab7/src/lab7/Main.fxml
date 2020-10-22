@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.control.TabPane?>
+
+<BorderPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lab7.Controller"> 
+   <top>
+        <TabPane fx:id="tabPane" prefHeight="887.0" prefWidth="709.0" BorderPane.alignment="CENTER">
+           <tabs>
+               <Tab fx:id="UserData" text="Start">
+               <content>
+                  <VBox prefHeight="466.0" prefWidth="543.0">
+                     <children>
+                        <Label alignment="TOP_CENTER" layoutX="10.0" layoutY="10.0" prefHeight="29.0" prefWidth="708.0" text="Суммирование" textAlignment="CENTER" />
+                        <TextField fx:id="varX" promptText="В это поле введите значение переменной X" />
+                        <TextField fx:id="varY" promptText="В это поле введите значение переменной Y" />
+                        <Button fx:id="beginTest" alignment="TOP_CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#onActionbeginSum" prefHeight="25.0" prefWidth="728.0" text="Просуммировать" textOverrun="CLIP" />
+                        <Button alignment="TOP_CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#onActionbeginMinus" prefHeight="25.0" prefWidth="728.0" text="Найти разность" textOverrun="CLIP" />
+                     </children></VBox>
+               </content>
+            </Tab>
+               <Tab fx:id="Summa" text="Summa">
+               <content>
+                  <Label fx:id="LabelSumma" alignment="TOP_CENTER" layoutX="10.0" layoutY="10.0" prefHeight="29.0" prefWidth="708.0" text="Поле вывода результата" textAlignment="CENTER" />
+               </content></Tab>
+               <Tab fx:id="Other" text="Other">
+               <content>
+                  <VBox prefHeight="200.0" prefWidth="100.0">
+                     <children>
+                        <Label fx:id="LabelOther" prefHeight="103.0" prefWidth="714.0" text="Label" />
+                     </children>
+                  </VBox>
+               </content></Tab>               
+           </tabs>
+        </TabPane>
+   </top>
+</BorderPane>
